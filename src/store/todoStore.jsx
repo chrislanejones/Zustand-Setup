@@ -10,4 +10,10 @@ const useTodoStore = create((set) => ({
     set((state) => ({
       todos: state.todos.filter((t) => t.id !== id),
     })),
+  toggleTodo: (id) =>
+    set((state) => ({
+      todos: state.todos.map((t) =>
+        t.id === id ? { ...t, completed: !t.completed } : t
+      ),
+    })),
 }));
