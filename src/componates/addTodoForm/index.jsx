@@ -13,7 +13,12 @@ const AddTodoForm = () => {
   };
   return (
     <form onSubmit={handleSubmit} className="flex justifed-between p-2">
-      <input className="flex-1 p-2 border rounded" type="text" value={text} />
+      <input
+        className="flex-1 p-2 border rounded"
+        type="text"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
     </form>
   );
 };
