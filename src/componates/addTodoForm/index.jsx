@@ -18,7 +18,14 @@ const AddTodoForm = () => {
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
+        placeholder="Add New Todo"
       />
+      <button
+        type="submit"
+        className="transition duration-200 ease-in-out transform hover:bg-blue-600 px-6 bg-blue-500 text-white ml-2 rounded"
+      >
+        Add
+      </button>
     </form>
   );
 };
