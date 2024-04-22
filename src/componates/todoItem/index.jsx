@@ -25,6 +25,12 @@ const TodoItem = (todo) => {
       <span className={`flex-1 ml-2 ${todo.completed ? "line-through" : ""}`}>
         {todo.text}
       </span>
+      <button
+        onClick={() => removeTodo(todo.id)}
+        className="px-2 py-1 bg-red-500 text-white rounded"
+      >
+        Delete
+      </button>
     </motion.li>
   );
 };
