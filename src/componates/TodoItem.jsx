@@ -5,8 +5,12 @@ import { motion } from "framer-motion";
 const TodoItem = ({ todo }) => {
   const { removeTodo, toggleTodo } = useTodoStore();
   const variants = {
-    initail: { opacity: 0, y: 50 },
+    initial: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0 },
+  };
+  const deleteButton = {
+    animate: { rotate: 360 },
+    transition: { type: 'spring' },
   };
   return (
     <motion.li
@@ -29,12 +33,15 @@ const TodoItem = ({ todo }) => {
       >
         {todo.text}
       </span>
-      <button
+      <motion.button
+                  variants={deleteButton}
+
+      animate="animate"
         onClick={() => removeTodo(todo.id)}
         className="px-6 py-2 bg-red-500 text-white rounded"
       >
         Delete
-      </button>
+      </motion.button>
     </motion.li>
   );
 };

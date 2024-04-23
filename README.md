@@ -18,4 +18,4 @@ Link to GitHub (this project is not on his GitHub Account)
 
 ## Additions from my code
 
-Dark Mode, Runs in Vite, Additional TailWind Design
+Dark Mode, Runs in Vite, Additional TailWind Design, and Additional Framer Motion Effects
