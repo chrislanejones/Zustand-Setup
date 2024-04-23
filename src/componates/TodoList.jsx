@@ -1,5 +1,5 @@
-import useTodoStore from "../../store/todoStore";
-import TodoItem from "../todoItem";
+import useTodoStore from "../store/todoStore";
+import TodoItem from "./TodoItem";
 import { AnimatePresence } from "framer-motion";
 
 const TodoList = () => {

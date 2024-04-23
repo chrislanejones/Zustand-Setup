@@ -1,6 +1,6 @@
 import "./App.css";
-import AddTodoForm from "./componates/addTodoForm";
-import TodoList from "./componates/todoList";
+import AddTodoForm from "./componates/AddToDo";
+import TodoList from "./componates/TodoList";
 
 function App() {
   return (

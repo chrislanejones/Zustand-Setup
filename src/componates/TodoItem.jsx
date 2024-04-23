@@ -1,4 +1,4 @@
-import useTodoStore from "../../store/todoStore";
+import useTodoStore from "../store/todoStore";
 
 import { motion } from "framer-motion";
 
@@ -22,7 +22,11 @@ const TodoItem = ({ todo }) => {
         onChange={() => toggleTodo(todo.id)}
         className="form-checkbox h-5 w-5"
       />
-      <span className={`flex-1 ml-2 text-white ${todo.completed ? "line-through" : ""}`}>
+      <span
+        className={`flex-1 ml-2 text-white ${
+          todo.completed ? "line-through" : ""
+        }`}
+      >
         {todo.text}
       </span>
       <button
