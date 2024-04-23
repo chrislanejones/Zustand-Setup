@@ -1,4 +1,3 @@
-import React from "react";
 import useTodoStore from "../../store/todoStore";
 import TodoItem from "../todoItem";
 import { AnimatePresence } from "framer-motion";

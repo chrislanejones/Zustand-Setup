@@ -1,4 +1,3 @@
-import React from "react";
 import useTodoStore from "../../store/todoStore";
 import { motion } from "framer-motion";
 
